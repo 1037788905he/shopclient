@@ -72,7 +72,6 @@ export default {
 .wrapper {
   position: absolute;
   top: 44px;
-  left: 0;
   bottom: 49px;
 }
 </style>

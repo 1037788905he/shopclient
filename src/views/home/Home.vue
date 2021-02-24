@@ -1,8 +1,8 @@
 <template>
-  <div id="home clear-fix">
+  <div>
     <!-- 标题栏 -->
     <nav-bar class="home-nav">
-      <div slot="center">朝物街</div>
+      <div slot="center">首页</div>
     </nav-bar>
     <tab-control v-show="isTabFixed" ref="tab_control1" class="fiexd" :titles="['推荐','流行','新款']"></tab-control>
 
@@ -71,7 +71,6 @@ export default {
   created() {
     //请求多个数据
     this.getHomeMultidata();
-
     //请求商品数据
     getGoodlist().then(res => {
       this.goodsList = res;
@@ -120,8 +119,8 @@ export default {
 
 .home-nav {
   position: relative;
-  background-color: #1a1b1f;
   color: #fff;
+  background-color: rgb(92, 83, 83);
   z-index: 3;
 }
 .fiexd {
